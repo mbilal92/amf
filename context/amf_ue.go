@@ -150,7 +150,7 @@ type AmfUe struct {
 	SmfNfId       string   `json:"smfNfId,omitempty"`
 	/* Related Context*/
 	//RanUe map[models.AccessType]*RanUe `json:"ranUe,omitempty" yaml:"ranUe" bson:"ranUe,omitempty"`
-	RanUe     map[models.AccessType]*RanUe `json:"ranUe, omitEmpty"`
+	RanUe     map[models.AccessType]*RanUe `json:"ranUe,omitempty"`
 	RanUeLock sync.RWMutex                 `json:"-"` // mutex for RanUe
 	/* other */
 	OnGoing                       map[models.AccessType]*OnGoingProcedureWithPrio `json:"onGoing,omitempty"`
